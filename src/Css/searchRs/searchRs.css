@@ -1,0 +1,128 @@
+#searchRs {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#searchRs #searchRs_item {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10% 5px 10%;
+  cursor: pointer;
+}
+
+#searchRs #searchRs_item:hover {
+  background-color: #5a5a5a;
+}
+
+#searchRs #searchRs_item:nth-child(even) {
+  background-color: #3d3d3d;
+}
+
+#searchRs #searchRs_item:nth-child(even):hover {
+  background-color: #5b5b5b;
+}
+
+#searchRs #searchRs_item span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+}
+
+#searchRs #searchRs_item .item_song_like {
+  width: 26px;
+  height: 26px;
+  background-image: url(../../Img/music_control.png);
+  background-repeat: no-repeat;
+  background-position-x: -59px;
+}
+
+#searchRs #searchRs_item .item_song_like:hover {
+  background-position-x: -89px;
+}
+
+#searchRs #searchRs_item .item_song_name {
+  -webkit-box-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  font-weight: 500;
+  color: white;
+}
+
+#searchRs #searchRs_item .item_singer_name {
+  width: 20%;
+}
+
+#searchRs #searchRs_item .item_singer_time {
+  width: 10%;
+}
+
+#searchRs #searchRs_bottom {
+  position: absolute;
+  bottom: 130px;
+  width: 210px;
+  height: 40px;
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#searchRs #searchRs_bottom button {
+  cursor: pointer;
+  background-color: aliceblue;
+  border: none;
+  width: 80px;
+  color: black;
+  height: 40px;
+}
+
+#searchRs #searchRs_bottom button:hover {
+  background-color: #cccbcb;
+  color: white;
+}
+
+#searchRs #searchRs_bottom p {
+  border: none;
+  width: 50px;
+  height: 40px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=searchRs.css.map */

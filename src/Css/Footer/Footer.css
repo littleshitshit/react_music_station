@@ -1,0 +1,307 @@
+footer #footer_pop {
+  position: relative;
+  width: 300px;
+  height: 200%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer #footer_pop .hidden {
+  width: inherit;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footer_pop .hidden #go_back {
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  margin: 0 10px 0 5px;
+}
+
+footer #footer_pop .hidden #go_back::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 1px white solid;
+  border-right: 1px white solid;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
+}
+
+footer #footer_pop .show {
+  width: inherit;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+footer #footer_pop .show img {
+  cursor: pointer;
+  display: block;
+  width: 54px;
+  height: 54px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 10px 0 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-image: url(../../Img/music_default.jpg);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position-x: -26px;
+  background-position-y: -13px;
+}
+
+footer #footer_pop .show #img_cover {
+  cursor: pointer;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  left: 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer #footer_pop .show #img_cover::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 1px white solid;
+  border-right: 1px white solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+footer #footer_pop .show div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+footer #footer_pop .show div p {
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+footer #footer_control {
+  height: 100%;
+  width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer #footer_control .buts {
+  width: 60%;
+  height: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footer_control .buts button {
+  border-radius: 50%;
+  border: none;
+  margin: 0px 8px 0px 8px;
+  background-color: #212121;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  background-image: url(../../Img/music_control.png);
+  background-repeat: no-repeat;
+}
+
+footer #footer_control .buts button:nth-child(1) {
+  background-position-x: -1px;
+  background-position-y: -343px;
+}
+
+footer #footer_control .buts button:nth-child(2) {
+  background-position-x: -1px;
+  background-position-y: -131px;
+}
+
+footer #footer_control .buts button:nth-child(2):hover {
+  background-position-x: -31px;
+}
+
+footer #footer_control .buts button:nth-child(3) {
+  width: 33px;
+  height: 35px;
+  background-position-x: -2px;
+  background-position-y: -204px;
+}
+
+footer #footer_control .buts button:nth-child(3):hover {
+  background-position-x: -42px;
+}
+
+footer #footer_control .buts button:nth-child(4) {
+  background-position-x: -81px;
+  background-position-y: -131px;
+}
+
+footer #footer_control .buts button:nth-child(4):hover {
+  background-position-x: -111px;
+}
+
+footer #footer_control .buts button:nth-child(5) {
+  background-position-x: -59px;
+  background-position-y: -501px;
+}
+
+footer #footer_control .buts button:nth-child(5):hover {
+  background-position-x: -89px;
+}
+
+footer #footer_control .progress_bar {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer #footer_control .progress_bar span {
+  font-size: 0.9rem;
+}
+
+footer #footer_control .progress_bar .bar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 45%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #141414;
+  cursor: pointer;
+}
+
+footer #footer_control .progress_bar .bar .now {
+  position: absolute;
+  height: 100%;
+  background-color: #c70c0c;
+}
+
+footer #footer_other_function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 300px;
+  height: 100%;
+}
+
+footer #footer_other_function button {
+  width: 25px;
+  height: 30px;
+  background-image: url(../../Img/music_control.png);
+  background-repeat: no-repeat;
+  background-color: #212121;
+  cursor: pointer;
+  border: none;
+  margin: 0 10px 0 10px;
+}
+
+footer #footer_other_function .volume {
+  background-position-x: -3px;
+  background-position-y: -246px;
+}
+
+footer #footer_other_function .volume:hover {
+  background-position-x: -32px;
+}
+
+footer #footer_other_function .mute {
+  background-position-x: -105px;
+  background-position-y: -66px;
+}
+
+footer #footer_other_function .mute:hover {
+  background-position-x: -127px;
+}
+
+footer #footer_other_function #volume_control_bar {
+  position: relative;
+  height: 6px;
+  width: 100px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+footer #footer_other_function #volume_control_bar::-webkit-progress-bar {
+  background-color: #141414;
+}
+
+footer #footer_other_function #volume_control_bar::-webkit-progress-value {
+  background-color: #c70c0c;
+}
+
+footer #footer_other_function #footer_playlist {
+  width: 60px;
+  height: 30px;
+  background-position-x: -45px;
+  background-position-y: -64px;
+}
+
+footer #footer_other_function #footer_playlist:hover {
+  background-position-y: -94px;
+}
+/*# sourceMappingURL=Footer.css.map */

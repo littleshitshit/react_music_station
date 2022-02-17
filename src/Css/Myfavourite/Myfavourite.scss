@@ -1,0 +1,87 @@
+#my_favourite {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    #my_favourite_item {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 5px 10% 5px 10%;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(90, 90, 90);
+        }
+        &:nth-child(even) {
+            background-color: rgb(61, 61, 61);
+            &:hover {
+                background-color: rgb(91, 91, 91);
+            }
+        }
+        span {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .item_song_like {
+            width: 26px;
+            height: 26px;
+            background-image: url(../../Img/music_control.png);
+            background-repeat: no-repeat;
+            background-position-x: -59px;
+            &:hover {
+                background-position-x: -89px;
+            }
+        }
+        .item_song_name {
+            flex: .6;
+            font-weight: 500;
+            color: white;
+        }
+        .item_singer_name {
+            width: 20%;
+        }
+        .item_singer_time {
+            width: 10%;
+        }
+    }
+    #searchRs_bottom {
+        position: absolute;
+        bottom: 130px;
+        width: 210px;
+        height: 40px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        overflow: hidden;
+        button {
+            cursor: pointer;
+            background-color: aliceblue;
+            border: none;
+            width: 80px;
+            color: black;
+
+            height: 40px;
+            &:hover {
+                background-color: rgb(204, 203, 203);
+                color: white;
+            }
+        }
+        p {
+            border: none;
+            width: 50px;
+            height: 40px;
+            color: black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

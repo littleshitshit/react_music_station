@@ -1,0 +1,237 @@
+footer {
+    #footer_pop {
+        position: relative;
+        width: 300px;
+        height: 200%;
+        transition: all 0.5s;
+        // bottom: -100%;
+        .hidden {
+            width: inherit;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            #go_back {
+                cursor: pointer;
+                width: 54px;
+                height: 54px;
+                margin: 0 10px 0 5px;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-top: 1px rgb(255, 255, 255) solid;
+                    border-right: 1px rgb(255, 255, 255) solid;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(135deg);
+                }
+            }
+        }
+        .show {
+            width: inherit;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            img {
+                cursor: pointer;
+                display: block;
+                width: 54px;
+                height: 54px;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 0 10px 0 5px;
+                transition: all 0.2s;
+                background-image: url(../../Img/music_default.jpg);
+                background-size: 200%;
+                background-repeat: no-repeat;
+                background-position-x: -26px;
+                background-position-y: -13px;
+            }
+            #img_cover {
+                cursor: pointer;
+                position: absolute;
+                width: 54px;
+                height: 54px;
+                left: 5px;
+                border-radius: 5px;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-top: 1px rgb(255, 255, 255) solid;
+                    border-right: 1px rgb(255, 255, 255) solid;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+            div {
+                flex: 1;
+                height: 55px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                p {
+                    width: 100%;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+    #footer_control {
+        height: 100%;
+        width: 580px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        .buts {
+            width: 60%;
+            height: 66%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            button {
+                border-radius: 50%;
+                border: none;
+                margin: 0px 8px 0px 8px;
+                background-color: rgb(33, 33, 33);
+                cursor: pointer;
+                width: 26px;
+                height: 26px;
+                background-image: url(../../Img/music_control.png);
+                background-repeat: no-repeat;
+                &:nth-child(1) {
+                    background-position-x: -1px;
+                    background-position-y: -343px;
+                }
+                &:nth-child(2) {
+                    background-position-x: -1px;
+                    background-position-y: -131px;
+                    &:hover {
+                        background-position-x: -31px;
+                    }
+                }
+                &:nth-child(3) {
+                    width: 33px;
+                    height: 35px;
+                    background-position-x: -2px;
+                    background-position-y: -204px;
+                    &:hover {
+                        background-position-x: -42px;
+                    }
+                }
+                &:nth-child(4) {
+                    background-position-x: -81px;
+                    background-position-y: -131px;
+                    &:hover {
+                        background-position-x: -111px;
+                    }
+                }
+                &:nth-child(5) {
+                    background-position-x: -59px;
+                    background-position-y: -501px;
+                    &:hover {
+                        background-position-x: -89px;
+                    }
+                }
+            }
+        }
+
+        .progress_bar {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-size: 0.9rem;
+            }
+            .bar {
+                flex: 1;
+                height: 45%;
+                position: relative;
+                overflow: hidden;
+                border-radius: 15px;
+                margin-left: 5px;
+                margin-right: 5px;
+                background-color: rgb(20, 20, 20);
+                cursor: pointer;
+
+                .now {
+                    position: absolute;
+                    height: 100%;
+                    background-color: rgb(199, 12, 12);
+                }
+            }
+        }
+    }
+
+    #footer_other_function {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 300px;
+        height: 100%;
+        button {
+            width: 25px;
+            height: 30px;
+            background-image: url(../../Img/music_control.png);
+            background-repeat: no-repeat;
+            background-color: rgb(33, 33, 33);
+            cursor: pointer;
+            border: none;
+            margin: 0 10px 0 10px;
+        }
+        .volume {
+            background-position-x: -3px;
+            background-position-y: -246px;
+            &:hover {
+                background-position-x: -32px;
+            }
+        }
+        .mute {
+            background-position-x: -105px;
+            background-position-y: -66px;
+            &:hover {
+                background-position-x: -127px;
+            }
+        }
+        #volume {
+        }
+        #volume_control_bar {
+            position: relative;
+            height: 6px;
+            width: 100px;
+            transition: all 0.5s;
+            // margin: 0px 5px 0px 5px;
+            display: block;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            &::-webkit-progress-bar {
+                background-color: rgb(20, 20, 20);
+            }
+            &::-webkit-progress-value {
+                background-color: rgb(199, 12, 12);
+            }
+        }
+
+        #footer_playlist {
+            width: 60px;
+            height: 30px;
+            background-position-x: -45px;
+            background-position-y: -64px;
+            &:hover {
+                background-position-y: -94px;
+            }
+        }
+    }
+}

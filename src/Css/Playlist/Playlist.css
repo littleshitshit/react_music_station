@@ -1,0 +1,139 @@
+.list_tab {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #3f3f3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 17px 0px 10px 17px;
+}
+
+.list_tab .tab_left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list_tab .tab_left p:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.list_tab .tab_left p:nth-child(2) {
+  font-size: 0.7rem;
+}
+
+.list_tab .tab_right {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.list_tab .tab_right p {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.list_tab .tab_right p:hover {
+  color: white;
+}
+
+#list_items {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 17px 17px 10px 17px;
+}
+
+#list_items .list_item {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+#list_items .list_item:hover {
+  background-color: #5a5a5a;
+}
+
+#list_items .list_item:nth-child(even) {
+  background-color: #3d3d3d;
+  border-radius: 2px;
+}
+
+#list_items .list_item:nth-child(even):hover {
+  background-color: #5b5b5b;
+}
+
+#list_items .list_item span {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+}
+
+#list_items .list_item .item_song_name {
+  width: 45%;
+  font-weight: 500;
+  color: white;
+}
+
+#list_items .list_item .item_song_like {
+  width: 26px;
+  height: 26px;
+  background-image: url(../../Img/music_control.png);
+  background-repeat: no-repeat;
+  background-position-x: -59px;
+}
+
+#list_items .list_item .item_song_like:hover {
+  background-position-x: -89px;
+}
+
+#list_items .list_item .item_singer_name {
+  width: 30%;
+}
+
+#list_items .list_item .item_singer_time {
+  width: 10%;
+}
+/*# sourceMappingURL=Playlist.css.map */
